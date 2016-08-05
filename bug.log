@@ -1,0 +1,16 @@
+Issues & Bugs
+============
+
+- (Resolved) Issue with SFX not always triggering on contact with player's paddle.
+
+- (Resolved) Issue with ball travelling through a player's paddle do to too high of a velocity on the ball.
+
+- (Resolved) Audio gain overload crashed game.
+
+- (Resolved) Spacebar eventlistener for closing menu and starting game would trigger even once the game had started, resulting in addition boards being added to the DOM.
+
+- (Resolved) Animation was not clearing properly when a player had won.
+
+- (Resolved) The toggling of Pause is possible during the final winner declaration, and causes the applause to loop through again.
+
+- (Resolved) When game pauses the styles change the background to a green, regardless of which court was selected.

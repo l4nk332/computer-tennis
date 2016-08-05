@@ -1,0 +1,252 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #97B067;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Styles for menu */
+#menu {
+  width: 400px;
+  height: 400px;
+  background-color: #869F62;
+  color: #1E552F;
+  padding: 1em;
+  position: relative;
+  font-family:  'Indie Flower', cursive;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#menu h1 {
+  font-family: 'Megrim', cursive;
+  text-align: center;
+  font-size: 3em;
+  margin: 10px auto;
+}
+
+.rule {
+  width: 75%;
+  border: 1px solid #1E552F;
+  margin-bottom: 15px;
+}
+
+#menu table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#controls {
+  padding-right: 1.6em;
+}
+
+.action {
+  border-bottom: 1px dashed #AABF8C;
+}
+
+.player {
+  border-right: 1px dashed #AABF8C;
+}
+
+
+#menu table td, #menu table th {
+  padding: 1em;
+  text-align: center;
+}
+
+
+#menu p {
+  margin-top: 35px;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  color: #F5F7D1;
+  opacity: 1;
+}
+
+/* This is the same style as above
+  need to make sure to eventually
+  switch most css styles to class based!
+ */
+.continue-message {
+  font-family:  'Indie Flower', cursive;
+  margin-top: 35px;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  color: #F5F7D1;
+  opacity: 1;
+}
+
+.hide {
+  animation-name: fade;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: none;
+  animation-iteration-count: none;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Styles for Mode Menu */
+
+#mode-container {
+  padding: 0;
+  margin-bottom: 49px;
+}
+
+.mode-header {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 10px auto 10px;
+}
+
+.mode-row {
+  margin: 0 auto 15px;
+}
+
+.modes > label {
+  font-size: 1.1 em;
+}
+
+.modes:nth-child(2) {
+  margin: 0 15px;
+}
+
+input, select {
+  cursor: pointer;
+}
+
+input:disabled, select:disabled {
+  cursor: not-allowed;
+}
+
+/* Grand-Slam Court Styles */
+
+.us-outer {
+ background-color: #90B68F;
+}
+
+.us-inner {
+ background-color: #6090BE;
+ border: 3px solid white;
+}
+
+.au-outer {
+ background-color: #4985C1;
+}
+
+.au-inner {
+ background-color: #678BAB;
+ border: 3px solid white;
+}
+
+.fr-outer {
+ background-color: #BB3F00;
+}
+
+.fr-inner {
+ background-color: #D05006;
+ border: 3px solid white;
+}
+
+.gb-outer {
+ background: repeating-linear-gradient(
+  90deg,
+  #95c946,
+  #95c946 20px,
+  #8abc41 20px,
+  #8abc41 40px
+ );
+}
+
+.gb-inner {
+ border: 3px solid white;
+}
+
+/* Classic Mode Styles */
+
+.classic-outer {
+    background-color: black;
+}
+
+.classic-inner {
+    background-color: black;
+    border: 3px solid white;
+}
+
+/* Chromatic Mode Styles */
+
+.chromatic-outer {
+    background-color: #242423;
+}
+
+.chromatic-inner {
+    background-color: #333533;
+    border: 3px solid #e8eddf;
+}
+
+/* Styles for the Winner Declaration */
+
+.svg-trophy {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMTMuMyAzMDMiPjxzdHlsZT4uYXtmaWxsOiM5MTkzNjU7fTwvc3R5bGU+PGcgZGlzcGxheT0ibm9uZSI+PHJlY3QgeD0iMTYiIHk9IjI1NiIgd2lkdGg9IjE4MiIgaGVpZ2h0PSI1NCIgY2xhc3M9ImEiLz48cmVjdCB4PSI0OSIgeT0iMjI4IiB3aWR0aD0iMTE1IiBoZWlnaHQ9IjQ4IiBjbGFzcz0iYSIvPjxyZWN0IHg9Ijg4IiB5PSI5MSIgd2lkdGg9IjM3IiBoZWlnaHQ9IjE2MyIgY2xhc3M9ImEiLz48cG9seWdvbiBwb2ludHM9IjMwLjIgNSAxODIuOCA1IDE3OCAxNDIgMzUgMTQyICIgY2xhc3M9ImEiLz48cGF0aCBkPSJNMTQxLjcgNjEuOGMtOC4zIDIyLjYgMC4xIDQ0LjYgMTguOCA0OS4xIDE4LjcgNC41IDQwLjYtMTAuMSA0OC45LTMyLjcgOC4zLTIyLjYtMC4xLTQ0LjYtMTguOC00OS4xQzE3MS44IDI0LjUgMTQ5LjkgMzkuMiAxNDEuNyA2MS44ek0xNTcuNSA2NS42YzUuNS0xNS4xIDE2LjktMjYuNCAyNi44LTI0IDkuOSAyLjQgMTYuNyAxOC4zIDExLjIgMzMuMyAtNS41IDE1LjEtMTUuNyAyNy4yLTI3LjkgMjguMkMxNTcuNSAxMDQuMSAxNTIgODAuNyAxNTcuNSA2NS42eiIgY2xhc3M9ImEiLz48cGF0aCBkPSJNMjIuNSAyOUMzLjggMzMuNi00LjcgNTUuNiAzLjYgNzguMmM4LjMgMjIuNiAzMC4yIDM3LjMgNDguOSAzMi43IDE4LjctNC41IDI3LjEtMjYuNSAxOC44LTQ5LjFDNjMuMSAzOS4yIDQxLjIgMjQuNSAyMi41IDI5ek00NS40IDEwMy4yQzMzLjIgMTAyLjIgMjMgOTAuMSAxNy41IDc1Yy01LjUtMTUuMSAxLjItMzAuOSAxMS4yLTMzLjMgOS45LTIuNCAyMS4zIDguOSAyNi44IDI0QzYxIDgwLjcgNTUuNSAxMDQuMSA0NS40IDEwMy4yeiIgY2xhc3M9ImEiLz48cGF0aCBkPSJNMTA2IDEwM2MwLTYuNi02LjQtMTItMTQuOC0xMkg1MC4zQzQxLjkgOTEgMzUgOTYuNCAzNSAxMDN2MzljMTMuNyAxNi4xIDU2LjMgMTkgNTYuMyAxOUMxMDMgMTYyLjggMTA2IDE1My42IDEwNiAxNDdWMTAzeiIgY2xhc3M9ImEiLz48cGF0aCBkPSJNMTA3IDEwM2MwLTYuNiA2LjQtMTIgMTQuOC0xMmg0MC45QzE3MS4xIDkxIDE3OCA5Ni40IDE3OCAxMDN2MzljLTEzLjcgMTYuMS01Ni4zIDE5LTU2LjMgMTlDMTEwIDE2Mi44IDEwNyAxNTMuNiAxMDcgMTQ3VjEwM3oiIGNsYXNzPSJhIi8+PC9nPjxwYXRoIGQ9Ik0xOTAuNSAyNGMtMi44LTAuNy01LjctMC45LTguNS0wLjhMMTgyLjggMEgzMC4ybDAuOCAyMy4zYy0yLjktMC4xLTUuNyAwLjEtOC41IDAuOEMzLjggMjguNi00LjcgNTAuNiAzLjYgNzMuMmM1LjYgMTUuMyAxNy40IDI2LjkgMzAuMyAzMS41TDM1IDEzN2MxMS4zIDEzLjQgNDIuNyAxNy42IDUzIDE4LjdWMjQ5aDM3di05My4zYzEwLjMtMS4xIDQxLjctNS4zIDUzLTE4LjdsMS4xLTMyLjRjMTIuOC00LjUgMjQuNi0xNi4yIDMwLjItMzEuNEMyMTcuNyA1MC42IDIwOS4yIDI4LjYgMTkwLjUgMjR6TTE3LjUgNzBjLTUuNS0xNS4xIDEuMi0zMC45IDExLjItMzMuMyAwLjktMC4yIDEuOC0wLjMgMi44LTAuM2wyIDU3LjFDMjYuNyA4OC40IDIxLjEgNzkuOCAxNy41IDcwek0xOTUuNSA3MGMtMy42IDkuOC05LjIgMTguNC0xNiAyMy40bDItNTcuMWMwLjkgMCAxLjkgMC4xIDIuOCAwLjNDMTk0LjMgMzkuMSAyMDEgNTQuOSAxOTUuNSA3MHoiIGZpbGw9IiNFRkM5MEEiLz48cG9seWdvbiBwb2ludHM9IjE2NCAyNTMgMTY0IDIyOCA0OSAyMjggNDkgMjUzIDE2IDI1MyAxNiAzMDMgMTk4IDMwMyAxOTggMjUzICIgZmlsbD0iIzYwMUMyQyIvPjxwYXRoIGQ9Ik0xOTAuNSAyNGMtMi44LTAuNy01LjctMC45LTguNS0wLjhMMTgyLjggMEgxMDd2MzAzaDkxdi01MGgtMzR2LTI1aC0zOXYtNzIuM2MxMC4zLTEuMSA0MS43LTUuMyA1My0xOC43bDEuMS0zMi40YzEyLjgtNC41IDI0LjYtMTYuMiAzMC4yLTMxLjRDMjE3LjcgNTAuNiAyMDkuMiAyOC42IDE5MC41IDI0ek0xOTUuNSA3MGMtMy42IDkuOC05LjIgMTguNC0xNiAyMy40bDItNTcuMWMwLjkgMCAxLjkgMC4xIDIuOCAwLjNDMTk0LjMgMzkuMSAyMDEgNTQuOSAxOTUuNSA3MHoiIHN0eWxlPSJmaWxsOiM3RjdGN0Y7b3BhY2l0eTowLjEiLz48L3N2Zz4K) no-repeat center center;
+  width: 250px;
+  height: 350px;
+  margin: auto;
+}
+
+.trophy-bar {
+  width: 380px;
+  margin: 25px auto 10px;
+}
+
+.win-message {
+  font-family: "Indie Flower", cursive;
+  font-size: 2em;
+}
+
+.header {
+  margin: 10px auto;
+}
+
+/* Styles for paused screen */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
