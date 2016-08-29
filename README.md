@@ -8,8 +8,7 @@ Here is a link to the most recent version of *Computer-Tennis*: [Play Now!](http
 
 ## Gameplay
 
-![Computer-Tennis Main Menu](https://github.com/l4nk332/computer-tennis/blob/master/img/3_modes.png)
-![Computer-Tennis Gameplay](https://github.com/l4nk332/computer-tennis/blob/master/img/1_us-open.png)
+![Computer-Tennis Screenshot Panel](https://github.com/l4nk332/computer-tennis/blob/master/img/Computer-Tennis-Screenshot-Panel.png)
 
 ### Objective
 The objective of the game is to prevent the ball from getting past your paddle fewer times than your oppenent (much like classic Pong).
