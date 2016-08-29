@@ -1,7 +1,5 @@
 # Computer Tennis
 
-![Computer-Tennis Main Menu](https://github.com/l4nk332/computer-tennis/blob/master/img/3_modes.png)
-![Computer-Tennis Gameplay](https://github.com/l4nk332/computer-tennis/blob/master/img/1_us-open.png)
 
 ## Overview
 *Computer Tennis* is an in-browser game that implements the [HTML Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) to recreate and add a variety of features to the classic game [*Pong*](https://en.wikipedia.org/wiki/Pong).
@@ -9,6 +7,9 @@
 Here is a link to the most recent version of *Computer-Tennis*: [Play Now!](https://computer-tennis.herokuapp.com/)
 
 ## Gameplay
+
+![Computer-Tennis Main Menu](https://github.com/l4nk332/computer-tennis/blob/master/img/3_modes.png)
+![Computer-Tennis Gameplay](https://github.com/l4nk332/computer-tennis/blob/master/img/1_us-open.png)
 
 ### Objective
 The objective of the game is to prevent the ball from getting past your paddle fewer times than your oppenent (much like classic Pong).
