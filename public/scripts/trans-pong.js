@@ -1438,7 +1438,7 @@ Ball.prototype.backspin = function () {
 //};
 function init() {
   var menuExit = 0;
-  window.addEventListener("keydown", function () {
+  window.addEventListener("keydown", function (event) {
     if (event.keyCode == "32" && menuExit === 0) {
       // Show first menu
       event.preventDefault();
